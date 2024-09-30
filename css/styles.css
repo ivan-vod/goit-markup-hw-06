@@ -776,6 +776,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    text-align: center;
     /* margin-right: 120px; */
 }
 
@@ -783,14 +784,22 @@ button {
 
 @media only screen and (min-width: 767.98px) {
   .footer-info-wrapper {
+    text-align: left;
     justify-content: left;
     align-items: baseline;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-info-wrapper {
+    margin-right: 120px;
   }
 }
 
 
 .footer-logo {
     display: inline-block;
+    text-align: center;
     /* margin-bottom: 16px; */
 }
 
@@ -812,6 +821,12 @@ button {
     /* gap: 16px; */
     /* margin-right: 120px; */
 
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-socials-wrapper {
+    margin-right: 80px;
+  }
 }
 
 .footer-socials-title {
@@ -873,25 +888,27 @@ button {
 @media only screen and (min-width: 767.98px) {
   .subscribe-form {
     flex-direction: row;
-    justify-content: baseline;
-    align-items: baseline;
+    justify-content: left;
+    align-items: left;
     gap: 24px;
+    /* transform: translateX(-2%); */
   }
 }
 
 .subscribe-form-title {
+    text-align: center;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgb(var(--WHITE));
-    text-align: center;
 }
 
 @media only screen and (min-width: 767.98px) {
   .subscribe-form-title {
     text-align: left;
+    /* transform: translateX(-2%); */
   }
 }
 
@@ -941,6 +958,8 @@ button {
     border: none;
     border-radius: 4px;
 }
+
+
 
 .subscribe-btn-icon {
     margin-left: 16px;
