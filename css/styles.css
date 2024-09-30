@@ -503,7 +503,7 @@ button {
 @media only screen and (min-width: 1158px) {
   .team-list {
     --item-count:4;
-    --column-gap:
+    --column-gap:24px;
   }
 }
 
