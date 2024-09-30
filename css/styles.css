@@ -91,7 +91,7 @@ button {
     padding: 96px 0;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .section {
     padding: 120px 0;
   }
@@ -102,7 +102,7 @@ button {
     padding: 0 16px;
     margin: 0 auto;
 
-    /* width: 1158px;
+    /* width: 1157px;
     padding: 0 15px;
     margin: 0 auto; */
 }
@@ -114,9 +114,9 @@ button {
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
     .container {
-        max-width: 1158px;
+        max-width: 1157px;
         padding: 0 15px;
     }
 }
@@ -177,7 +177,7 @@ button {
     flex-grow: 1;
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   .header-nav {
     justify-content: space-between;
   }
@@ -189,7 +189,7 @@ button {
 }
 
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .header-logo {
     margin-right: 76px;
   }
@@ -204,14 +204,14 @@ button {
 
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   .header-nav-list {
     display: none;
     
   }
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .header-nav-list {
     font-size: 12px;
     line-height: 1.7; /* 116.667% */
@@ -220,7 +220,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .header-nav-list {
     font-size: 16px;
     line-height: 1.5; /* 150% */
@@ -292,13 +292,13 @@ button {
     /* gap: 40px; */
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
     .header-contacts-list {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .header-contacts-list {
     flex-direction: column;
     gap: 12px;
@@ -308,7 +308,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .header-contacts-list {
     flex-direction: row;
     gap: 40px;
@@ -424,7 +424,7 @@ button {
     /* gap: 24px; */
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .principles-list {
     --item-count: 2;
     --row-gap: 72px;
@@ -432,7 +432,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .principles-list {
     --item-count: 4;
     --row-gap: 72px;
@@ -458,7 +458,7 @@ button {
     background: rgb(var(--CLOUD,));
 }
 
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .principles-icon-wrapper {
     display:none;
   }
@@ -477,13 +477,13 @@ button {
     letter-spacing: 0.72px;
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .principle-title {
     text-align: left;
   }
 }
 
-  @media only screen and (min-width: 1158px) {
+  @media only screen and (min-width: 1157px) {
     .principle-title {
     font-size: 20px;
     font-weight: 500;
@@ -506,7 +506,7 @@ button {
 
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .principle-desc {
     font-weight: 400;
   }
@@ -541,7 +541,7 @@ button {
 }
 
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .team-list {
     --item-count:2;
     --row-gap: 64px;
@@ -549,7 +549,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .team-list {
     --item-count:4;
     --column-gap:24px;
@@ -650,7 +650,7 @@ button {
     
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .portfolio-list {
         --item-count: 2;
         --column-gap: 24px;
@@ -658,7 +658,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .portfolio-list {
         --item-count: 3;
         --column-gap: 24px;
@@ -760,14 +760,27 @@ button {
     flex-direction: column;
 
 }
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .footer-wrapper {
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: baseline;
     flex-wrap: wrap;
     column-gap: 24px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1157px) {
+    .footer-wrapper{
+        width: 584px;
+    }
+  }
+
+  @media screen and (min-width: 1157px){
+    .footer-wrapper{
+        width: 1125px;
+    }
   }
 
 .footer-info-wrapper {
@@ -776,13 +789,12 @@ button {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    text-align: center;
     /* margin-right: 120px; */
 }
 
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .footer-info-wrapper {
     text-align: left;
     justify-content: left;
@@ -790,7 +802,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .footer-info-wrapper {
     margin-right: 120px;
   }
@@ -798,9 +810,9 @@ button {
 
 
 .footer-logo {
-    display: inline-block;
+    display: block;
     text-align: center;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
 }
 
 .footer-text{
@@ -823,7 +835,7 @@ button {
 
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .footer-socials-wrapper {
     margin-right: 80px;
   }
@@ -840,7 +852,7 @@ button {
     text-align: center;
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .footer-socials-title {
     text-align: left;
   }
@@ -885,7 +897,7 @@ button {
     row-gap: 16px;
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .subscribe-form {
     flex-direction: row;
     justify-content: left;
@@ -905,7 +917,7 @@ button {
     color: rgb(var(--WHITE));
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .subscribe-form-title {
     text-align: left;
     /* transform: translateX(-2%); */
@@ -926,7 +938,7 @@ button {
     color: rgb(var(--WHITE));
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
   .subscribe-input {
     width: 264px;
   }
