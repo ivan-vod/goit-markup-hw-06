@@ -779,7 +779,7 @@ button {
 
   @media screen and (min-width: 1158px){
     .footer-wrapper{
-        width: 1125px;
+        flex-wrap: nowrap;
     }
   }
 
