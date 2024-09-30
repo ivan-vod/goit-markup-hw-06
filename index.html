@@ -38,6 +38,11 @@
               <a class="header-nav-link" href="#">Contacts</a>
             </li>
           </ul>
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
         <address class="header-contact-info">
           <ul class="header-contacts-list">
@@ -130,8 +135,8 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="team-list">
-            <li class="team-list-item">
+          <ul class="team-list card-set">
+            <li class="team-list-item card-set-item">
               <img
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
@@ -173,7 +178,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item card-set-item">
               <img
                 src="./images/tom.jpg"
                 alt="Tom Ford"
@@ -216,7 +221,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item card-set-item">
               <img
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
@@ -258,7 +263,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item card-set-item">
               <img
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
@@ -511,7 +516,7 @@
     <!-- #endregion Footer -->
 
     <!-- #region Modal window -->
-    <div class="backdrop is-open js-modal">
+    <div class="backdrop js-modal">
       <div class="modal">
         <button class="modal-btn js-close-modal" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -588,8 +593,6 @@
               name="user-privacy"
               type="checkbox"
               value="true"
-              checked
-              required
             />
             <label
               class="form-agreement form-agreement-text"

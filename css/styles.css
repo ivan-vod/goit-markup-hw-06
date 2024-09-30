@@ -11,7 +11,7 @@
 --GREEN: 49 208 170;
 --DIARY: 252 252 252;
 
---column-gap: 24px ;
+--column-gap: 24px;
 --row-gap: calc(2 * var(--column-gap));
 --item-count: 4;
 
@@ -88,13 +88,37 @@ button {
 }
 
 .section {
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
     padding: 120px 0;
+  }
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+
+    /* width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto; */
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 .visually-hidden {
@@ -119,16 +143,16 @@ button {
 
 /* Card Set */
 
-/* .card-set {
+.card-set {
     display: flex;
     flex-wrap: wrap;
     row-gap: var(--row-gap);
-    column-gap: var(--column-gap) ;
+    column-gap: var(--column-gap);
 }
 
 .card-set-item {
     flex-basis: calc((100% - var(--column-gap) * (var(--item-count) - 1)) / var(--item-count));
-} */
+}
 
 /* #endregion */
 
@@ -136,6 +160,7 @@ button {
 
 
 .header {
+
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid rgb(var(--CORNFLOWER));
 
@@ -152,8 +177,22 @@ button {
     flex-grow: 1;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .header-nav {
+    justify-content: space-between;
+  }
+}
+
 .header-logo {
+    padding: 16px 0;
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 767.98px) {
+  .header-logo {
     margin-right: 76px;
+  }
 }
 
 
@@ -163,6 +202,31 @@ button {
     gap: 40px;
     flex-grow: 1;
 
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header-nav-list {
+    display: none;
+    
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .header-nav-list {
+    font-size: 12px;
+    line-height: 1.7; /* 116.667% */
+    letter-spacing: 0.48px;
+    
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-nav-list {
+    font-size: 16px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.32px;
+    
+  }
 }
 
 .header-nav-item {
@@ -225,8 +289,37 @@ button {
 .header-contacts-list {
     display: flex;
     align-items: center;
-    gap: 40px;
+    /* gap: 40px; */
 }
+
+@media only screen and (max-width: 767.98px) {
+    .header-contacts-list {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1158px) {
+  .header-contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-link {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    padding: 24px 0;
+  }
+}
+
+
 
 .contact-list-item {
 
@@ -234,7 +327,7 @@ button {
 
 .contact-link {
     display: block;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     color: rgb(var(--SLATE));
     font-size: 16px;
     font-style: normal;
@@ -392,8 +485,30 @@ button {
     gap: 24px;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .team-list {
+    --item-count: 1;
+    --row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .team-list {
+    --item-count:2;
+    --row-gap: 64px;
+    --column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    --item-count:4;
+    --column-gap:
+  }
+}
+
 .team-list-item {
-    flex-basis: calc((100% - var(--column-gap) * (var(--item-count) - 1)) / var(--item-count));
+    /* flex-basis: calc((100% - var(--column-gap) * (var(--item-count) - 1)) / var(--item-count)); */
     background-color: rgb(var(--WHITE));
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -959,6 +1074,12 @@ input[type="checkbox"]:checked + .form-agreement + .checkbox {
     background-color: rgb(var(--OCEAN));
 }
 
+.agreement-check:checked + .form-agreement > .checkbox {
+    fill: rgb(var(--CLOUD));
+    border: none;
+    background-color: rgb(var(--OCEAN));
+}
+
 .form-agreement-text {
     color: rgb(var(--LIGHT-SLATE));
 
@@ -973,3 +1094,27 @@ input[type="checkbox"]:checked + .form-agreement + .checkbox {
 
 /* #endregion */
 
+/* #region Mobile menu */
+
+.mobile-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+     .mobile-menu-btn {
+     display: none;
+     }
+    }
+        
+
+.mobile-menu-icon {
+}
+
+/* #endregion */
