@@ -754,7 +754,7 @@ button {
 
 .footer-wrapper {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     row-gap: 72px;
     flex-direction: column;
@@ -780,6 +780,7 @@ button {
   @media screen and (min-width: 1158px){
     .footer-wrapper{
         flex-wrap: nowrap;
+        gap: unset;
     }
   }
 
